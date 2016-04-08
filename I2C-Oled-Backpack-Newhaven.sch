@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6191,7 +6191,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <attribute name="DATE" value="3/20/2016"/>
 <attribute name="DRAWNBY" value="Gary Muhonen"/>
 <attribute name="TITLE" value="I2C OLED Backpack (Newhaven)"/>
-<attribute name="VERSION" value="A"/>
+<attribute name="VERSION" value="B"/>
 </part>
 <part name="C1" library="0" deviceset="CAP" device="0805" value="100NF"/>
 <part name="R1" library="0" deviceset="RESISTOR" device="0805" value="4.7k"/>
@@ -6219,10 +6219,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="R4" library="0" deviceset="RESISTOR" device="0805" value="10K"/>
 <part name="U$2" library="0" deviceset="CREATIVE_COMMONS" device=""/>
 <part name="J3" library="0" deviceset="LCD-NEWHAVEN" device="-LOCK"/>
-<part name="SJ4" library="0" deviceset="SOLDERJUMPER" device="NC"/>
-<part name="R5" library="0" deviceset="RESISTOR" device="0805" value="10K"/>
-<part name="GND5" library="0 - Seeedstudio" deviceset="GND" device=""/>
-<part name="P+7" library="0 - Seeedstudio" deviceset="VCC" device=""/>
 <part name="GND8" library="0 - Seeedstudio" deviceset="GND" device=""/>
 <part name="J4" library="0" deviceset="M04" device="LOCK"/>
 </parts>
@@ -6233,12 +6229,6 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="101.6" y="147.32" size="1.778" layer="91">no jump=3D</text>
 <text x="101.6" y="144.78" size="1.778" layer="91">jump=3C</text>
 <text x="73.66" y="154.94" size="1.778" layer="91">I2C Pullups</text>
-<text x="17.78" y="149.86" size="1.778" layer="91">Voltage Select</text>
-<text x="17.78" y="147.32" size="1.778" layer="91">OPEN=5V</text>
-<text x="17.78" y="144.78" size="1.778" layer="91">CLOSED=3.3V</text>
-<text x="15.24" y="134.62" size="1.778" layer="91">IMPORTANT !!!
-SET JUMPER 
-BEFORE USE !!!</text>
 <text x="161.29" y="69.85" size="1.778" layer="91">OLED (Newhaven)</text>
 </plain>
 <instances>
@@ -6283,10 +6273,6 @@ BEFORE USE !!!</text>
 <instance part="J3" gate="G$1" x="167.64" y="104.14" smashed="yes">
 <attribute name="NAME" x="160.02" y="127.508" size="1.778" layer="95"/>
 </instance>
-<instance part="SJ4" gate="1" x="43.18" y="149.86" rot="R90"/>
-<instance part="R5" gate="G$1" x="43.18" y="165.1" rot="R270"/>
-<instance part="GND5" gate="1" x="43.18" y="139.7"/>
-<instance part="P+7" gate="G$1" x="43.18" y="172.72"/>
 <instance part="GND8" gate="1" x="91.44" y="101.6"/>
 <instance part="J4" gate="G$1" x="78.74" y="116.84" rot="MR180"/>
 </instances>
@@ -6307,7 +6293,8 @@ BEFORE USE !!!</text>
 <wire x1="147.32" y1="99.06" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="101.6" x2="147.32" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="111.76" x2="147.32" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="119.38" x2="147.32" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 <junction x="147.32" y="99.06"/>
@@ -6343,6 +6330,9 @@ BEFORE USE !!!</text>
 <pinref part="J3" gate="G$1" pin="CS"/>
 <pinref part="J3" gate="G$1" pin="BS0"/>
 <pinref part="J3" gate="G$1" pin="BS2"/>
+<pinref part="J3" gate="G$1" pin="REGVDD"/>
+<wire x1="157.48" y1="119.38" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<junction x="147.32" y="119.38"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -6370,11 +6360,6 @@ BEFORE USE !!!</text>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="SJ3" gate="1" pin="1"/>
 <wire x1="121.92" y1="142.24" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="SJ4" gate="1" pin="1"/>
-<wire x1="43.18" y1="142.24" x2="43.18" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="83.82" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
@@ -6464,11 +6449,6 @@ BEFORE USE !!!</text>
 <wire x1="144.78" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="P+7" gate="G$1" pin="VCC"/>
-<wire x1="43.18" y1="170.18" x2="43.18" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <label x="86.36" y="114.3" size="1.778" layer="95" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="86.36" y1="114.3" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
@@ -6549,31 +6529,9 @@ BEFORE USE !!!</text>
 <wire x1="91.44" y1="157.48" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="REGVDD" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="REGVDD"/>
-<wire x1="157.48" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
-<label x="134.62" y="119.38" size="1.778" layer="95" rot="R180" xref="yes"/>
-<label x="38.1" y="157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="SJ4" gate="1" pin="2"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="154.94" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="157.48" x2="43.18" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
-<junction x="43.18" y="157.48"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
