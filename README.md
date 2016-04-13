@@ -5,11 +5,15 @@
 <div style="text-align: center;">
 
 <div style="display: inline-block; margin-right: 5px;">
-<img class="size-thumbnail wp-image-176" src="http://wht.io/wp-content/uploads/projects/i2c-oled/i2c-oled-module2.jpg" alt="i2c oled backpack with display" width="300" height="200" />
+<img class="size-thumbnail wp-image-176" src="http://wht.io/wp-content/uploads/projects/i2c-oled-backpack-newhaven/i2c-oled-backpack-newhaven.jpg" alt="i2c oled backpack with display" width="300" height="200" />
 </div>
 
 <div style="display: inline-block; margin-right: 5px;">
-<img class="size-thumbnail wp-image-175" src="http://wht.io/wp-content/uploads/projects/i2c-oled/i2c-oled-backpack.jpg" alt="i2c oled backpack" width="300" height="200" />
+<img class="size-thumbnail wp-image-175" src="http://wht.io/wp-content/uploads/projects/i2c-oled-backpack-newhaven/i2c-oled-backpack-on-newhaven.jpg" alt="i2c oled backpack" width="300" height="200" />
+</div>
+
+<div style="display: inline-block; margin-right: 5px;">
+<img class="size-thumbnail wp-image-175" src="http://wht.io/wp-content/uploads/projects/i2c-oled-backpack-newhaven/newhaven-seeeduino.jpg" alt="i2c oled backpack" width="300" height="200" />
 </div>
 
 </div>
