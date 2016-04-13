@@ -1,7 +1,5 @@
 #### I²C OLED Backpack Board for the Newhaven OLED displays
 
-##### Real pictures are coming soon!
-
 <div style="text-align: center;">
 
 <div style="display: inline-block; margin-right: 5px;">
