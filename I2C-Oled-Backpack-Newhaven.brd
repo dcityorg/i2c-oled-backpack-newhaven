@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -164,12 +165,12 @@
 <text x="17.78" y="8.636" size="0.889" layer="21" font="vector" ratio="11" rot="R180">ADR</text>
 <text x="32.2326" y="17.3228" size="0.889" layer="21" font="vector" ratio="11">I2C OLED BKPK NEWHAVEN</text>
 <text x="23.8506" y="18.1356" size="0.889" layer="21" font="vector" ratio="11">+</text>
-<text x="49.53" y="17.145" size="0.889" layer="22" font="vector" ratio="11" rot="MR0">I2C OLED BACKPACK - NEWHAVEN (Rev B)</text>
+<text x="49.53" y="17.145" size="0.889" layer="22" font="vector" ratio="11" rot="MR0">I2C OLED BACKPACK - NEWHAVEN (Rev C)</text>
 <text x="32.258" y="3.048" size="0.889" layer="21" font="vector" ratio="11" rot="R90">SDA</text>
 <text x="34.671" y="3.048" size="0.889" layer="21" font="vector" ratio="11" rot="R90">SCL</text>
 <text x="49.784" y="2.921" size="0.889" layer="21" font="vector" ratio="11" rot="R90">G</text>
 <text x="47.371" y="2.921" size="0.889" layer="21" font="vector" ratio="11" rot="R90">V</text>
-<text x="1.524" y="16.9418" size="1.524" layer="21" font="vector" ratio="10">wht.io</text>
+<text x="1.524" y="16.9418" size="1.524" layer="21" font="vector" ratio="10">dcity.org</text>
 <rectangle x1="13.0556" y1="13.8176" x2="14.732" y2="15.0114" layer="43"/>
 <rectangle x1="15.621" y1="13.7922" x2="17.2212" y2="15.0622" layer="43"/>
 <rectangle x1="18.161" y1="13.7414" x2="19.8374" y2="15.0114" layer="43"/>
@@ -191,13 +192,13 @@
 <rectangle x1="46.4058" y1="2.54" x2="47.8028" y2="3.7846" layer="43"/>
 <rectangle x1="48.8188" y1="2.54" x2="50.1904" y2="3.8608" layer="43"/>
 <rectangle x1="10.4648" y1="14.4018" x2="12.5984" y2="15.8496" layer="43"/>
-<text x="7.747" y="16.891" size="1.524" layer="22" font="vector" ratio="10" rot="MR0">wht.io</text>
+<text x="11.557" y="16.891" size="1.524" layer="22" font="vector" ratio="10" rot="MR0">dcity.org</text>
 <text x="18.288" y="7.62" size="0.889" layer="21" font="vector" ratio="11" rot="R180">C=3C</text>
 <text x="18.288" y="6.604" size="0.889" layer="21" font="vector" ratio="11" rot="R180">O=3D</text>
 <text x="25.146" y="5.715" size="0.889" layer="21" font="vector" ratio="11" rot="R180">PULLUPS</text>
 <rectangle x1="14.986" y1="5.588" x2="18.288" y2="8.763" layer="43"/>
 <rectangle x1="19.304" y1="4.699" x2="25.019" y2="5.969" layer="43"/>
-<text x="33.5026" y="16.0528" size="0.889" layer="21" font="vector" ratio="11">(Rev B)</text>
+<text x="33.5026" y="16.0528" size="0.889" layer="21" font="vector" ratio="11">(Rev C)</text>
 <rectangle x1="36.2966" y1="3.5306" x2="37.973" y2="4.7244" layer="43"/>
 <rectangle x1="38.9636" y1="3.4036" x2="40.64" y2="4.5974" layer="43"/>
 <rectangle x1="15.8115" y1="10.5537" x2="17.0307" y2="13.2207" layer="43" rot="R90"/>
@@ -205,6 +206,7 @@
 <rectangle x1="23.3045" y1="10.6807" x2="24.5237" y2="13.3477" layer="43" rot="R90"/>
 <rectangle x1="26.035" y1="2.921" x2="29.337" y2="6.096" layer="43"/>
 <rectangle x1="16.8656" y1="2.7686" x2="18.542" y2="3.9624" layer="43"/>
+<wire x1="50.8" y1="19.05" x2="50.8" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="0 - Seeedstudio">
@@ -634,10 +636,14 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="1"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -991,6 +997,13 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="20.2692" y1="10.668" x2="20.32" y2="10.61" width="0.1778" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 </eagle>
