@@ -2,15 +2,15 @@
 
 <div style="text-align: center;">
 <div style="display: inline-block; margin-right: 5px;">
-<a href="https://www.dcity.org/dcity/wp-content/uploads/projects2/i2c-oled-backpack-newhaven/newhaven-seeeduino.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/projects2/i2c-oled-backpack-newhaven/newhaven-seeeduino-600x400.jpg" alt="" width="300" height=“200" class="alignnone size-medium wp-image-517" /></a>
+<a href="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven-with-blackboard.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven-with-blackboard-600x400.jpg" alt="" width="300" height=“200" class="alignnone size-medium wp-image-517" /></a>
 </div>
 
 <div style="display: inline-block; margin-right: 5px;">
-<a href="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-backpack-on-newhaven-d.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-backpack-on-newhaven-d-600x400.jpg" alt="" width="300" height="200" class="alignnone size-medium wp-image-496" /></a>
+<a href="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven-with-oled.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven-with-oled-600x400.jpg" alt="" width="300" height="200" class="alignnone size-medium wp-image-496" /></a>
 </div>
 
 <div style="display: inline-block; margin-right: 5px;">
-<a href="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-backpack-newhaven-d.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-backpack-newhaven-d-600x400.jpg" alt="" width="300" height=“200" class="alignnone size-medium wp-image-517" /></a>
+<a href="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven.jpg"><img src="https://www.dcity.org/dcity/wp-content/uploads/i2c-oled-newhaven-600x400.jpg" alt="" width="300" height=“200" class="alignnone size-medium wp-image-517" /></a>
 </div>
 </div>
 
